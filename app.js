@@ -41,7 +41,7 @@ function createPokemon(pokemon) {
   flipCard.classList.add("flip-card");
 
   const cardContainer = document.createElement("div");
-  cardContainer.classList.add("card-container");
+  cardContainer.classList.add("card-container", "shadow-sm");
 
   flipCard.appendChild(cardContainer);
 
@@ -95,7 +95,7 @@ function progressBars(stats) {
     progress.classList.add("progress");
 
     const progressBar = document.createElement("div");
-    progressBar.classList.add("progress-bar");
+    progressBar.classList.add("progress-bar", "bg-dark");
     progressBar.setAttribute("aria-valuenow", stat.base_stat);
     progressBar.setAttribute("aria-valuemin", 0);
     progressBar.setAttribute("aria-valuemax", 200);
