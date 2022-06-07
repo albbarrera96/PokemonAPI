@@ -56,10 +56,10 @@ function createPokemon(pokemon) {
 
   spriteContainer.appendChild(sprite);
 
-  const number = document.createElement("p");
+  const number = document.createElement("h3");
   number.textContent = `#${pokemon.id.toString().padStart(3, 0)}`;
 
-  const name = document.createElement("p");
+  const name = document.createElement("h3");
   name.classList.add("name");
   name.textContent = pokemon.name;
 
